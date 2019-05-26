@@ -1,7 +1,7 @@
 %%  Simple Usage - - - - - - - - - - - - - - - - - -
 
 % Load the image
-img = imread('./Examples/example.jpg');
+img = imread('example.jpg');
 
 % Input parameters
 xPosPupil = 625;
