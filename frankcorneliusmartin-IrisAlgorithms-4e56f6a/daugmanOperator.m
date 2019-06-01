@@ -1,12 +1,4 @@
 function energy = daugmanOperator( image , x , y , r , varargin )
-%daugmanOperator, function that estimates the daugman integral. This can be
-%used to detect the pupil, and iris boundary. (but can also be used in more
-%general to detect circles in images. To estimate the integral a finite
-%number of samples (default 36) on the circle is computed. In case of
-%eyelid occlusion (covering the upper and lower part of the limbus boundary) 
-%the bow-tie sample scheme should be used, which is the default. By the
-%default setting a circle is used, but it is also possible to use an
-%Ellipse instead.
 %   
 %   SYNOPSIS
 %       - energy = daugmanOperator( image, 100, 100, 10)
@@ -20,19 +12,6 @@ function energy = daugmanOperator( image , x , y , r , varargin )
 %   OUTPUT
 %       - energy <double>, the total value of the integral for the
 %       specified circle.
-%
-%   DEPENDANCIES
-%       - 
-%
-%   HISTORY
-%       - 1 february 2017, cleaned for the repository
-%
-%   REFERENCES
-%       (1) How iris recognition works, Daugman, J.G. 
-%
-%   AUTHOR
-%       F.C. Martin <frank@grafikus.nl>
-%       19th of May 2015
 %
 % - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -    
     

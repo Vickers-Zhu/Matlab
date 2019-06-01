@@ -31,24 +31,6 @@ function [minX, minY, minR, image] = daugmanCircleDetection( image , varargin )
 %            Containing the radius
 %       - image <double>
 %            Input image plus detected limbus or pupil
-%
-%   DEPENDANCIES
-%       - Class: ASSStack > StackBase
-%       - Function: daugmanOperator
-%
-%   HISTORY
-%       - 26th may 2017: cleaned up for the repository
-%       - 4th june 2015: updated comment section, updated functionnames
-%
-%   REFERENCES
-%       (1) Iris Boundary Detection Using An Ellipse Integro Differential
-%           Method, Shamsi, M. et al. 
-%       (2) How iris recognition works, Daugman, J.G.
-%
-%   AUTHOR
-%       F.C. Martin <frank@grafikus.nl>
-%       4th of may 2015 - 26th may 2017
-%
 % - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
     % if no image is provided, gui to the file

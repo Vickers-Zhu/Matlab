@@ -1,7 +1,7 @@
-%%  Simple Usage - - - - - - - - - - - - - - - - - -
+%% - - - - - - - - - - - - - - - - - -
 
 % Load the image
-img = imread('example.jpg');
+img = imread('Example2.jpg');
 
 % Input parameters
 xPosPupil = 625;
@@ -19,12 +19,12 @@ figure(2);
 imshow(irisRegion);
 
 %% Control Radial and Angular Samples - - - - - - - - - - - - - - - - - -
-%  The following example show you how to define the number of samples in
+%  The following example show how to define the number of samples in
 %  angular and radial direction. Note that the number of the radial and
 %  angular samples is unusable low, but good to demonstrate the parameters.
 
 % Load the image
-img = imread('example.jpg');
+img = imread('Example2.jpg');
 
 % Input parameters
 xPosPupil = 625;
@@ -50,7 +50,7 @@ imshow(irisRegion);
 %  the computation, but is less preciese. 
 
 % Load the image
-img = imread('example.jpg');
+img = imread('Example2.jpg');
 
 % Input parameters
 xPosPupil = 625;

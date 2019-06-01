@@ -1,7 +1,4 @@
 function image = rubberSheetNormalisation( img, xPosPupil, yPosPupil, rPupil , xPosIris , yPosIris , rIris , varargin )
-%rubberSheetNormalisation, function that normalizes the iris region. This is
-%the region between the pupil boundary and the limbus. This is done
-%according to the rubber sheet model proposed by Daugman (1).
 %   
 %   SYNOPSIS
 %       - image = rubberSheetNormalisation( img, xPosPupil, yPosPupil, rPupil , xPosIris , yPosIris , rIris )
@@ -20,26 +17,7 @@ function image = rubberSheetNormalisation( img, xPosPupil, yPosPupil, rPupil , x
 %           'AngleSamples': <integer> - number of radial samples
 %           'RadiusSamples': <integer> - number of radius samples
 %           'UseInterpolation': <boolean> - if 1, the samples will be
-%              interpolated else nearest neighbor interpolation is used.
-%
-%   OUTPUT
-%       - image, containing the normalized iris region
-%
-%   DEPENDANCIES
-%       - Communications Toolbox
-%       - Computer Vision System Toolbox (for debugmode)
-%
-%   HISTORY
-%       - 26th may 2017: removed Communications Toolbox
-%       - 19th June 2016: added the interpolation option
-%
-%   REFERENCES
-%   (1) How iris recognition works, Daugman, J.G. 
-%
-%   AUTHOR
-%       F.C. Martin <frank@grafikus.nl>
-%       19th of May 2015 - 26th may 2017
-%
+%           interpolated else nearest neighbor interpolation is used.
 % - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
     %todo: remove for-loop for line detection
