@@ -1,7 +1,7 @@
 function [solution, no_iterations] = Halley(f, dfdx, dfdxs, x0, eps)
     x = x0;
     f_value = f(x);
-%     disp(f_value);
+    disp(f_value);
     iteration_counter = 0;
     while abs(f_value) > eps && iteration_counter < 100
         try
