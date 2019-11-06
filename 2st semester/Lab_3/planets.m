@@ -1,9 +1,10 @@
-function [xunit, yunit] = planets(name, distance, day)
+function [xunit, yunit, radius] = planets(name, distance, r, day)
 
 AU = [0.39, 0.72, 1.00, 1.50, 5.20, 9.50, ...
      19.20];
 RVLS = [87.70, 224.70, 365, 686.98, 4332.71, 10759.5, ...
        30685];
+RADIUS = [0.3824, 0.95, 1.00, 0.53, 11.2, 9.46, 4.0];
 
 switch(name)
     case 'Mercury'
@@ -35,6 +36,7 @@ fixedpoint = th(idx);
 % find the specific point at the given day.
 xunit = r * cos(fixedpoint) + xoffset;
 yunit = r * sin(fixedpoint) + yoffset;
+radius = RADIUS(index);
 x = r * cos(th) + xoffset;
 y = r * sin(th) + yoffset;
 plot3(x, y, th.*0, '-');
