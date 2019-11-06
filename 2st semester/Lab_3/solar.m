@@ -46,7 +46,6 @@ set(jupiter,'facecolor','#B45C3D');
 set(saturn,'facecolor','#C5AB6E');
 set(uranus,'facecolor', '#D5FBFC');
 
-
 d = 0;
 
 pause(1.5);
@@ -75,5 +74,3 @@ while ishandle(f)
     set(uranus, 'YData', y_sp*r7+y7);
     pause(0.015);
 end
-
-

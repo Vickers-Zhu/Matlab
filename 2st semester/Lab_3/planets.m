@@ -40,6 +40,3 @@ radius = RADIUS(index);
 x = r * cos(th) + xoffset;
 y = r * sin(th) + yoffset;
 plot3(x, y, th.*0, '-');
-
-
-
