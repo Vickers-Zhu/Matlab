@@ -1,4 +1,4 @@
-function [xunit, yunit, radius] = planets(name, distance, r, day)
+function [xunit, yunit, radius] = planets(name, distance, rad, day)
 
 AU = [0.39, 0.72, 1.00, 1.50, 5.20, 9.50, ...
      19.20];
@@ -36,7 +36,7 @@ fixedpoint = th(idx);
 % find the specific point at the given day.
 xunit = r * cos(fixedpoint) + xoffset;
 yunit = r * sin(fixedpoint) + yoffset;
-radius = RADIUS(index);
+radius = RADIUS(index)*rad;
 x = r * cos(th) + xoffset;
 y = r * sin(th) + yoffset;
 plot3(x, y, th.*0, '-');
